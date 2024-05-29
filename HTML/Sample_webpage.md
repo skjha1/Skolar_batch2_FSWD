@@ -102,3 +102,51 @@ footer {
 
 
 ```
+
+
+
+
+***Updated CSS***
+
+```CSS
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.image-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 30%; 
+    height: auto; 
+    max-height: 200px; 
+    object-fit: cover; 
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: fixed; 
+    width: 100%;
+    bottom: 0;
+}
+
+```
