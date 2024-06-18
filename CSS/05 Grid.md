@@ -1,3 +1,4 @@
+## Dashboard Layout
 ### HTML
 ```html
 
@@ -87,6 +88,71 @@ body {
         'widget1'
         'widget2'
         'footer';
+    }
+}
+
+
+```
+
+
+## Photo Gallery 
+
+### HTML
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+    
+</body>
+</html>
+```
+### CSS
+```body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    background-color: #d4e6f1;
+    padding: 20px;
+    border: 1px solid #b0c4de;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) ;
+    }
+    .item {
+        font-size: 18px;
     }
 }
 
